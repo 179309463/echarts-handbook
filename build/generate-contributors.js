@@ -138,5 +138,5 @@ async function ghWeb() {
   Object.keys(entries).length && writeToFile()
 }
 
-ghWeb()
+//ghWeb()
 
