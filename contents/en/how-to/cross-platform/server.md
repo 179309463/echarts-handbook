@@ -188,7 +188,7 @@ Starting from version v5.5.0, if the chart only needs the following effects and 
 ```html
 <div id="chart-container" style="width:800px;height:600px"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/echarts/ssr/client/dist/index.min.js"></script>
+<script src="/vendor-cdn/echarts/ssr/client/dist/index.min.js"></script>
 <script>
 const ssrClient = window['echarts-ssr-client'];
 
@@ -242,7 +242,7 @@ The client-side lightweight runtime can be imported in the following ways:
 
 ```html
 <!-- Method one: Using CDN -->
-<script src="https://cdn.jsdelivr.net/npm/echarts/ssr/client/dist/index.min.js"></script>
+<script src="/vendor-cdn/echarts/ssr/client/dist/index.min.js"></script>
 <!-- Method two: Using NPM -->
 <script src="node_modules/echarts/ssr/client/dist/index.js"></script>
 ```

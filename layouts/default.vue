@@ -41,7 +41,7 @@ export default {
         {
           rel: 'shortcut icon',
           type: 'image/png',
-          href: `https://echarts.apache.org/${locale}/images/favicon.png`
+          href: `/${locale}/images/favicon.png`
         },
         ...(isCN ? [
           'https://lib.baomitu.com',
@@ -58,35 +58,35 @@ export default {
         {
           rel: 'stylesheet',
           href: isCN
-            ? 'https://lib.baomitu.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css'
-            : 'https://fastly.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css'
+            ? '/vendor-cdn/bootstrap@3.4.1/dist/css/bootstrap.min.css'
+            : '/vendor-cdn/bootstrap@3.4.1/dist/css/bootstrap.min.css'
         },
         {
           rel: 'stylesheet',
-          href: `https://echarts.apache.org/${locale}/css/main.css`
+          href: `/${locale}/css/main.css`
         },
         {
           rel: 'stylesheet',
           href: isCN
-            ? 'https://lib.baomitu.com/docsearch.js/2.6.3/docsearch.min.css'
-            : 'https://fastly.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css'
+            ? '/vendor-cdn/docsearch.js@2.6.3/dist/cdn/docsearch.min.css'
+            : '/vendor-cdn/docsearch.js@2.6.3/dist/cdn//cdn/docsearch.min.css'
         }
       ],
       script: [
         {
           src: isCN
-            ? 'https://registry.npmmirror.com/jquery/3.7.1/files/dist/jquery.min.js'
-            : 'https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js'
+            ? '/vendor-cdn/jquery@3.7.1/dist/jquery.min.js'
+            : '/vendor-cdn/jquery@3.7.1/dist/jquery.min.js'
         },
         {
           src: isCN
-            ? 'https://lib.baomitu.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js'
-            : 'https://fastly.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js'
+            ? '/vendor-cdn/bootstrap@3.4.1/dist/js/bootstrap.min.js'
+            : '/vendor-cdn/bootstrap@3.4.1/dist/js/bootstrap.min.js'
         },
         {
           src: isCN
-            ? 'https://lib.baomitu.com/docsearch.js/2.6.3/docsearch.min.js'
-            : 'https://fastly.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.js'
+            ? '/vendor-cdn/docsearch.js@2.6.3/dist/cdn/docsearch.min.js'
+            : '/vendor-cdn/docsearch.js@2.6.3/dist/cdn//cdn/docsearch.min.js'
         }
       ],
       noscript: [

@@ -53,8 +53,8 @@ function ensureECharts(locale) {
     const lib = process.env.NUXT_ENV_DEPLOY === 'asf' ? 'echarts' : 'echarts-nightly'
     return loadScriptsAsync([
       isCN
-        ? `https://registry.npmmirror.com/${lib}/latest/files/dist/echarts.min.js`
-        : `https://fastly.jsdelivr.net/npm/${lib}@latest/dist/echarts.min.js`
+        ? `/vendor-cdn/${lib}/latest/files/dist/echarts.min.js`
+        : `/vendor-cdn/${lib}@latest/dist/echarts.min.js`
     ]).then(() => {})
   }
   return Promise.resolve()

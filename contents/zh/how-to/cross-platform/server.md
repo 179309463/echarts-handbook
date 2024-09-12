@@ -188,7 +188,7 @@ echarts.setPlatformAPI({
 ```html
 <div id="chart-container" style="width:800px;height:600px"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/echarts/ssr/client/dist/index.min.js"></script>
+<script src="/vendor-cdn/echarts/ssr/client/dist/index.min.js"></script>
 <script>
 const ssrClient = window['echarts-ssr-client'];
 
@@ -242,7 +242,7 @@ fetch('...')
 
 ```html
 <!-- 方法一：使用 CDN -->
-<script src="https://cdn.jsdelivr.net/npm/echarts/ssr/client/dist/index.min.js"></script>
+<script src="/vendor-cdn/echarts/ssr/client/dist/index.min.js"></script>
 <!-- 方法二：使用 NPM -->
 <script src="node_modules/echarts/ssr/client/dist/index.js"></script>
 ```
